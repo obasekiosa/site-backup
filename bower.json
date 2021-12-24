@@ -1,10 +1,10 @@
 {
-  "name": "devlopr-jekyll",
-  "homepage": "https://github.com/sujaykundu777/devlopr-jekyll",
+  "name": "obasekiosa",
+  "homepage": "https://obasekiosa.github.io",
   "authors": [
-    "sujaykundu777 <sujaykundu777@gmail.com>"
+    "obasekiosa <obasekiosa@gmail.com>"
   ],
-  "description": "A Jekyll Theme Built For Developers",
+  "description": "A Jekyll Powered Static Site",
   "main": "",
   "keywords": [
     "jekyll-theme",
