@@ -1,0 +1,95 @@
+---
+layout: default
+---
+<section id="intro">
+    <div class="flex-row-between">
+        <h1>{{ site.greetings }}</h1>
+        <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+            <div></div>
+        </button>
+    </div>
+    <div class="bio">
+        <p>
+            {{ site.description }}
+        </p>
+        <ul>
+            <li style="display: flex;"><a href="{{ site.url }}{{ site.baseurl}}/">> Blog</a></li>
+            <li style="display: flex;"><a href="{{ site.url }}{{ site.baseurl }}/about/">> About me</a></li>
+            <li style="display: flex;"><a href="{{ site.url }}{{ site.baseurl }}/projects/">> Projects</a></li>
+        </ul>
+    </div>
+</section>
+
+<!-- <nav>
+    <ul>
+        <li style="display: flex;"><a href="{{ site.url }}{{ site.baseurl }}/about/">> About me</a></li>
+        <li style="display: flex;"><a href="{{ site.url }}{{ site.baseurl }}/about/">> Projects</a></li>
+    </ul>
+</nav> -->
+
+<section class="posts" id="Blog">
+    <h2>Projects</h2>
+    <ul>
+        <!-- {% for post in site.posts %}
+        <li>
+		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        </li>
+        {% endfor %} -->
+
+        <li>
+            <a href="https://obasekiosa.github.io/faq-accordion-card" title="See the project" target="_blank" rel="noopener noreferrer">Faq Accordion Page</a>
+           <p>Front end <a href="https://github.com/obasekiosa/faq-accordion-card" title="Browse the code" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"
+                aria-hidden="true"></i></a></p>
+        
+            </li>
+        <li>
+            <a href="https://mflix-movies.herokuapp.com/" title="See the project" target="_blank" rel="noopener noreferrer">MFlix Movies</a>
+           <p>Full Stack <a href="https://github.com/obasekiosa/mflix-movies" title="Browse the code" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"
+                aria-hidden="true"></i></a></p>
+        </li>
+        
+        <li>
+            <a href="https://obasekiosa.github.io/profile-card-component" title="See the project" target="_blank" rel="noopener noreferrer">Profile Card Component</a>
+            <p>Front end <a href="https://github.com/obasekiosa/profile-card-component" title="Browse the code" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+        </li>
+        
+        <li>
+            <a href="https://obasekiosa.github.io/3-column-preview-card-component " title="See the project" target="_blank" rel="noopener noreferrer">3-column-preview-card-component</a>
+            <p>Front end <a href="https://github.com/obasekiosa/3-column-preview-card-component " title="Browse the code" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+        </li>
+        
+        <li>
+            <a href="https://obasekiosa.github.io/nft-maker" title="See the project" target="_blank" rel="noopener noreferrer">nft-maker</a>
+            <p>Blockchain <a href="https://github.com/obasekiosa/nft-maker" title="Browse the code" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+        </li>
+        
+        <li>
+            <a href="https://obasekiosa.github.io/stats-preview-card-component" title="See the project" target="_blank" rel="noopener noreferrer">stats-preview-card-component</a>
+            <p>Front end <a href="https://github.com/obasekiosa/stats-preview-card-component" title="Browse the code" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+        </li>
+        
+        <li>
+            <a href="https://obasekiosa.github.io/nft-preview-card-component" title="See the project" target="_blank" rel="noopener noreferrer">nft-preview-card-component</a>
+            <p>Front end <a href="https://github.com/obasekiosa/nft-preview-card-component" title="Browse the code" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+        </li>
+       
+        <li>
+            <a href="https://obasekiosa.github.io/simon-game/" title="See the project" target="_blank" rel="noopener noreferrer">Simon Game</a>
+            <p>Front end <a href="https://github.com/obasekiosa/simon-game" title="Browse the code" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+        </li>
+        
+        <li>
+            <a href="https://similarities-deploy.herokuapp.com/" title="See the project" target="_blank" rel="noopener noreferrer">File Similarity Checker</a>
+            <p>Full Stack <a href="https://github.com/obasekiosa/similarities" title="Browse the code" target="_blank"
+                    rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+        </li>
+        
+    </ul>
+</section>

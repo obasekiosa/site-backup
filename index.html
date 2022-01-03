@@ -9,10 +9,14 @@ layout: default
         </button>
     </div>
     <div class="bio">
-	    {{ site.description }}
         <p>
-	    <a href="{{ site.url }}{{ site.baseurl }}/about/">> About me</a>
+            {{ site.description }}
         </p>
+        <ul>
+            <li style="display: flex;"><a href="{{ site.url }}{{ site.baseurl}}/">> Blog</a></li>
+            <li style="display: flex;"><a href="{{ site.url }}{{ site.baseurl }}/about/">> About me</a></li>
+            <li style="display: flex;"><a href="{{ site.url }}{{ site.baseurl }}/projects/">> Projects</a></li>
+        </ul>
     </div>
 
 
