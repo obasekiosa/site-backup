@@ -14,6 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+
+    - name: Get yarn dependencies
+      run: |
+        yarn install
+
     # Build
     - name: 👷 Build the site in the jekyll container 
       run: |

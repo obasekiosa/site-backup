@@ -44,7 +44,7 @@ scripts: assets/js/simple-jekyll-search.js index.js
     <h2>BLOG</h2>
     <ul>
         {% for post in site.posts %}
-        <li>
+        <li class="hover:bg-slate-100 dark:hover:bg-rose-800 text-sky-900">
 		<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
         </li>
