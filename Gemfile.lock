@@ -30,6 +30,7 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
     jekyll-paginate (1.1.0)
+    jekyll-postcss-v2 (1.0.2)
     jekyll-relative-links (0.6.1)
       jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (2.1.0)
@@ -69,11 +70,13 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
   jekyll
   jekyll-paginate
+  jekyll-postcss-v2
   jekyll-relative-links
   jekyll-sitemap
   tzinfo-data (~> 1.2021)

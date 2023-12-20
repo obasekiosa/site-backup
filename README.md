@@ -36,8 +36,8 @@ Simple and minimal Jekyll blog.
 Run local server:
 
 ```bash
-$ git clone https://github.com/obasekiosa/seki.git
-$ cd seki
+$ git clone https://github.com/obasekiosa.github.io.git
+$ cd obasekiosa.github.io
 $ bundle config set --local path 'vendor/bundle'
 $ bundle install
 $ bundle exec jekyll build

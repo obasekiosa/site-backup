@@ -10,3 +10,5 @@ _site
 .obsidian
 vendor/
 .bundle/
+node_modules/
+build/

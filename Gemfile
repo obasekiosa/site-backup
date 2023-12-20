@@ -10,3 +10,7 @@ gem 'wdm', '>= 0.1.0'
 
 # update ruby version
 gem 'webrick'
+
+group :jekyll_plugins do
+    gem 'jekyll-postcss-v2'
+end
