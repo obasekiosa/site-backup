@@ -495,12 +495,22 @@ video {
   visibility: collapse;
 }.static {
   position: static;
+}.fixed {
+  position: fixed;
+}.absolute {
+  position: absolute;
+}.relative {
+  position: relative;
 }.inline {
   display: inline;
 }.flex {
   display: flex;
 }.table {
   display: table;
+}.border {
+  border-width: 1px;
+}.capitalize {
+  text-transform: capitalize;
 }.text-sky-900 {
   --tw-text-opacity: 1;
   color: rgb(12 74 110 / var(--tw-text-opacity));

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="/stuff.js"></script> -->
+    <link rel="stylesheet" href="stuff_game.css"/>
+</head>
+
+<body>
+    <style>
+        body {
+            height: 200px;
+            background: beige;
+        }
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            border-radius: 4px;
+            /* rounds corners */
+            background: blue;
+            position: absolute;
+        }
+
+        #progress { border-bottom: 2px solid blue; width: 0; position: fixed; top: 0; left: 0; }
+
+        /* canvas {
+            border: 1px orange solid;
+        } */
+    </style>
+    
+    <div id="progress"></div>
+    
+    <!-- <p style="text-align: center">
+
+        <img src="./mario_sprite.png" style="position: relative"/>
+
+    </p> -->
+    <!-- <p><span id="one"></span></p>
+    <p><span id="two"></span></p> -->
+    <!-- <input type="file" multiple/>  -->
+    <canvas></canvas>
+    <script>
+        // let cat = document.querySelector("img");
+        // let angle = Math.PI / 2;
+        // function animate(time, lastTime) {
+        //     if (lastTime != null) {
+        //         angle += (time - lastTime) * 0.001;
+        //     }
+        //     cat.style.top = (Math.sin(angle) * 20) + "px";
+        //     cat.style.left = (Math.cos(angle) * 200) + "px";
+        //     requestAnimationFrame(newTime => animate(newTime, time));
+        // }
+        // requestAnimationFrame(animate);
+
+        window.addEventListener("click", event => { let dot = document.createElement("div"); dot.className = "dot"; dot.style.left = (event.pageX - 4) + "px"; dot.style.top = (event.pageY - 4) + "px"; document.body.appendChild(dot); });
+    
+        // let squareWorker = new Worker("stuff.js");
+        // squareWorker.addEventListener("message", event => {
+        //     console.log("the worker responed:", event.data);
+        // });
+        // squareWorker.postMessage(10);
+        // squareWorker.postMessage(300);
+
+    </script>
+    <script src="stuff_game.js"></script>
+    <script>
+        
+        let cx = document.querySelector("canvas").getContext("2d");
+        let img = document.createElement("img");
+
+        img.src = "./mario_sprite.png";
+
+        let spriteW = 2*24, spriteH = 2*30;
+        img.addEventListener("load", () => { 
+            let cycle = 0;
+            setInterval(() => {
+                cx.clearRect(12, 12, spriteW, spriteH);
+                cx.drawImage(img, // source rectangle 
+                cycle * spriteW, 0, spriteW, spriteH,
+                // destination rectangle 
+                12, 12, spriteW, spriteH); 
+                cycle = (cycle + 1) % 8;
+            }, 120);
+        });
+
+        // let input = document.querySelector("input");
+        // input.addEventListener("change", (event) => {
+        //     if (input.files.length > 0) {
+        //         for (let i = 0; i < input.files.length; i++) {
+        //             let file = input.files[i];
+        //             console.log(file.name);
+        //             let fr = new FileReader();
+        //             let f = fr.readAsArrayBuffer(file);
+        //             console.log(fr);
+        //         }
+        //     }
+        // })
+        // start();
+    </script>
+</body>

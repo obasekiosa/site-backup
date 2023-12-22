@@ -93,6 +93,18 @@
 <lastmod>2019-08-31T00:00:00+00:00</lastmod>
 </url>
 <url>
+<loc>/projects/index</loc>
+<lastmod>2023-12-22T00:36:37+00:00</lastmod>
+</url>
+<url>
+<loc>/projects/pixel-editor/index</loc>
+<lastmod>2023-12-22T00:36:37+00:00</lastmod>
+</url>
+<url>
+<loc>/projects/stuff/stuff</loc>
+<lastmod>2023-12-22T00:36:37+00:00</lastmod>
+</url>
+<url>
 <loc>/about/</loc>
 </url>
 <url>
@@ -121,8 +133,5 @@
 </url>
 <url>
 <loc>/</loc>
-</url>
-<url>
-<loc>/projects/</loc>
 </url>
 </urlset>
