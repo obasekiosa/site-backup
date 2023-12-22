@@ -250,15 +250,26 @@ function line(startPos, state, dispatch) {
             xEnd = startPos.x;
             yEnd = startPos.y;
         }
-
-        const slope = (yEnd - yStart) / (xEnd - xStart);
-
         const pixels = [];
-        for (let x = xStart; x <= xEnd; x++) {
-            const y = Math.ceil((x - xStart) * slope) + yStart;
-            pixels.push({x, y, color: state.color});
+        const div = 0.1;
 
-            console.log(x, y);
+        if (xStart !== xEnd) {
+
+            const slope = (yEnd - yStart) / (xEnd - xStart);
+
+        
+            for (let x = xStart; x <= xEnd; x+=div) {
+                const y = Math.floor((x - xStart) * slope) + yStart;
+                pixels.push({x: Math.floor(x), y, color: state.color});
+
+                console.log(x, y);
+            }
+        } else {
+            yStart = Math.min(yStart, yEnd);
+            yEnd = Math.max(yStart, yEnd);
+            for (let y = yStart; y <= yEnd; y++) {
+                pixels.push({x: xStart, y, color: state.color});
+            }
         }
 
         dispatch({picture: state.picture.draw(pixels)});
