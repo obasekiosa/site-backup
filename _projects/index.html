@@ -112,6 +112,15 @@ layout: default
             <p>Full Stack <a href="https://github.com/obasekiosa/similarities" title="Browse the code" target="_blank"
                     rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></p>
         </li>
+
+        {% for proj in site.projects offset: 1 %}
+            {% assign url = proj.url | split: "/" %}
+            <li>
+                <a href={{proj.url}} title="See the project" target="_blank" rel="noopener noreferrer">{{ url[-2] }}<span class="enclose">[</span><span class="enclose-text">{{proj.status | capitalize}}</span><span class="enclose">]</span></a>
+                <p>{{ proj.category }} <a href="#" title="Browse the code" target="_blank"
+                        rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+            </li>
+        {% endfor %}
         
     </ul>
 </section>

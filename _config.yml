@@ -43,4 +43,9 @@ plugins:
   - jekyll-relative-links
   - jekyll-postcss-v2
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path
+
 

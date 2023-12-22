@@ -44,6 +44,8 @@ html[data-theme="light"] {
 	--dark-text-color: #393e46;
 	--link-color: rgb(50, 87, 209);
 	--code-bg-color: rgb(245, 245, 245);
+  --enclose-text-color: rgb(255, 128, 0); 
+  --enclose-color:black;
 
 	background-color: rgb(255, 255, 255);
 
@@ -109,6 +111,8 @@ html[data-theme="dark"] {
 	--link-color: rgb(255, 89, 125);
 	--code-bg-color: rgb(36, 38, 42);
 	background-color: rgb(19, 20, 24);
+  --enclose-text-color: greenyellow;
+  --enclose-color: cyan;
 
 	#theme-toggle div {
 		position: relative;
@@ -773,11 +777,11 @@ $link-color: var(--link-color);
 }
 
 .enclose {
-  color: cyan;
+  color: var(--enclose-color);
 }
 
 .enclose-text {
-  color: greenyellow;
+  color: var(--enclose-text-color)
 }
 
 .desc {
