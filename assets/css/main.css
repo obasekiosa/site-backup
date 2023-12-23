@@ -507,6 +507,8 @@ video {
   display: flex;
 }.table {
   display: table;
+}.grid {
+  display: grid;
 }.border {
   border-width: 1px;
 }.capitalize {
