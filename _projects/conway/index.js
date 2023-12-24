@@ -31,7 +31,6 @@ class Conway {
                     type: "checkbox",
                     onclick: state ?  (e) => {
                         state.grid[i * this.width + j] = e.target.checked;
-                        console.log(i, j, e.target.checked, state.grid[i * this.width + j]);
                     } : null,                   
                 });
                 cell.style.width = `${scale}px`;
